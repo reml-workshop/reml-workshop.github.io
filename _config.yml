@@ -1,4 +1,56 @@
-theme: jekyll-theme-tactile
-title: SIGIR Workshop on Retrieval-Enhanced Machine Learning
-description: July 27, 2023
-show_downloads: false
+markdown    : kramdown
+highlighter : pygments
+gems: [jekyll-paginate]
+
+destination: _site
+
+# SEO settings
+url: http://reml-workshop.github.io
+baseurl: ""
+# baseurl: ""
+
+
+# Author settings
+author:
+  name      : Hamed Zamani
+  url       : https://groups.cs.umass.edu/zamani/
+
+
+# Site settings
+title: REML
+# email: your-email@domain.com
+description: "The first international workshop on retrieval-enhanced machine learning."
+
+# Build settings
+# permalink: pretty
+theme: jekyll-theme-minimal
+
+
+# Team names, titles and social links
+people:
+- name: Michael Bendersky
+  pic: 2
+  position: Google Research
+  url: https://bendersky.github.io/
+
+- name: Danqi Chen
+  pic: 4
+  position: Princeton University
+  url: https://www.cs.princeton.edu/~danqic/
+  
+- name: Fernando Diaz
+  pic: 3
+  position: Google Research
+  url: https://841.io/
+  
+- name: Hamed Zamani
+  pic: 1
+  position: University of Massachusetts Amherst
+  url: http://cs.umass.edu/~zamani
+
+
+
+
+
+
+
