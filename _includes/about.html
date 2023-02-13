@@ -13,6 +13,22 @@
                     </div>
                 </div>
             </div>
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 text-justify">
+					<p class="large text-muted">
+						<h3>Motivation:</h3>
+						<p>The vast majority of machine learning (ML) systems are designed to be self-contained, with both knowledge and reasoning encoded in model parameters. They suffer from a number of major shortcomings that can be (fully or partially) addressed, if machine learning models have access to efficient and effective retrieval models:</p>
+						<li><b>Knowledge grounding:</b> A number of important real-world problems, often called knowledge-intensive tasks, require access to external knowledge. They include (among others) open-domain question answering, task-oriented dialogues, and fact checking. Therefore, ML systems that make predictions solely based on the data observed during training fall short when dealing with knowledge-intensive tasks. In addition, ML models related to non-stationary domains, such as news or social media, can significantly benefit from accessing fresh data. An information retrieval (IR) system can decouple reasoning from knowledge, allowing it to be maintained and updated independent of model parameters at a cadence aligned with the corpus.</li>
+						<li><b>Generalization:</b> Recent work has shown that many ML models can significantly benefit from retrieval augmentation. For example, enhancing generative ML models, such as language models and dialogue systems, using retrieval will have a large impact on their generalization.</li>
+						<li><b>Significant growth in model parameters:</b> Since all the required information for making predictions is often encoded in the ML models' parameters, increasing their capacity by increasing the number of parameters generally leads to higher accuracy. For example, the number of parameters used in LMs has increased from 94 million in ELMo to 1.6 trillion in Switch Transformers, an over 16x increase in just three years (2018 -- 2021). Despite these successes, improving performance by increasing the number of model parameters can incur significant cost and limit access to a handful of organizations that have the resources to train them. As such, this approach is neither scalable nor sustainable in the long run, and providing access to a scalable large collection (or memory) can potentially mitigate this issue.</li>
+						<li><b>Interpretability and explainability:</b> Because the knowledge in training data is encoded in learned model parameters, explanations of model predictions often appeal to abstract and difficult-to-interpret distributed representations. By grounding inference on retrieved information, predictions can more easily be traced to specific data, often stored in a human-readable format such as text.</li>
+												
+						<p>Recent research has demonstrated that errors in many REML models are mostly due to the failure of retrieval model as opposed to the augmented machine learning model, confirming the well-known "garbage in, garbage out" phenomenon. We believe that the expertise of the IR research community is pivotal for further progress in REML models. Therefore, we propose to organize a workshop with a fresh perspective on retrieval-enhanced machine learning through an information retrieval lens. For more information, refer to the following perspective paper:</p>
+						
+						<p>H. Zamani, F. Diaz, M. Dehghani, D. Metzler, M. Bendersky. <a href="https://dl.acm.org/doi/10.1145/3477495.3531722">"Retrieval-Enhanced Machine Learning"</a>. In Proc. of SIGIR 2022.</p>
+					</p>
+				</div>
+			</div>
             <div class="row">
 	    	<div class="col-lg-8 col-lg-offset-2 text-justify">
 	        	<p class="large text-muted">
@@ -35,4 +51,3 @@
         
         </div>
     </section>
-
